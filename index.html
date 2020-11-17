@@ -445,7 +445,16 @@
           <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
           <address class="footer-contacts">
             <ul class="footer-list">
-              <li class="item"><p>г.Киев, пр-т Леси Украинки, 26</p></li>
+              <li class="item">
+                <a
+                  class="location-link"
+                  href="https://goo.gl/maps/JCMvUqQt4Z2m48do7"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
               <li class="item">
                 <a href="mailto:info@expample.com">info@expample.com</a>
               </li>
@@ -456,7 +465,7 @@
           </address>
         </div>
         <div class="footer-social-links">
-          <h2 class="footer-title-join-us">Присоединяйтесь</h2>
+          <b class="footer-title">Присоединяйтесь</b>
           <ul class="footer-icons list">
             <li class="social-icons-item">
               <a
@@ -512,6 +521,18 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <b class="footer-title">Подпишитесь на рассылку</b>
+          <form class="subscribe-form">
+            <input class="mail-input" type="email" name="mail" placeholder="E-mail" />
+            <button class="btn-send button">
+              <span class="btn-title">Подписаться</span>
+              <svg class="svg-send">
+                <use href="./img-hw-4/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -523,6 +544,15 @@
             <use href="./img-hw-4/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="form">
+          <label for="name">Имя</label>
+          <input type="text" id="name" />
+          <label for="tel">Телефон</label>
+          <input type="tel" id="tel" />
+          <label for="mail">Почта</label>
+          <input type="email" id="mail" />
+        </div>
       </div>
     </div>
     <!--MODAL WINDOW + OVERLAY END-->

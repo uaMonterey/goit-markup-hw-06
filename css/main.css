@@ -39,14 +39,15 @@
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
 
+  min-width: 200px;
   padding: 10px 32px;
 
   border-radius: 4px;
   border: inherit;
 
-  text-align: center;
   background-color: var(--accent);
 
   font-weight: 700;
@@ -55,6 +56,7 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--white);
+  transition: 250ms var(--timing-function);
 }
 
 /* Стилизация секции Особенности  */
@@ -316,5 +318,28 @@
   background: var(--accent);
   border-color: var(--white);
 }
+
+.modal-title {
+  margin-left: 40px;
+  margin-top: 2px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
 /* Стилизация подвала 
    находится в common.css  */

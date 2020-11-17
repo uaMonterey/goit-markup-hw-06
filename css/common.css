@@ -339,7 +339,7 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-list p {
+.footer-list .location-link {
   font-style: normal;
   text-decoration: none;
   color: #ffffff;
@@ -355,6 +355,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-links {
@@ -364,15 +365,9 @@ body {
   height: 80px;
 }
 
-.footer-title-join-us {
+.footer-title {
+  display: inline-block;
   margin-bottom: 20px;
-
-  width: 145px;
-  height: 16px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -399,4 +394,71 @@ body {
 .footer .social-icons-link:hover,
 .footer .social-icons-link:focus {
   background: var(--accent);
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.mail-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 16px 15px;
+  background: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.mail-input:focus,
+.mail-input:hover {
+  outline-color: var(--accent);
+  color: var(--white);
+}
+
+.button.btn-send {
+  display: flex;
+  align-items: center;
+
+  padding-left: 29px;
+  padding-right: 28px;
+
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  transition: 250ms var(--timing-function);
+  color: white;
+}
+
+.btn-title {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.svg-send {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+  transition: 250ms var(--timing-function);
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background: var(--white);
+  color: var(--title-text-color);
+}
+
+.btn-send:hover .svg-send {
+  fill: var(--accent);
 }
