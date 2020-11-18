@@ -544,15 +544,30 @@
             <use href="./img-hw-4/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="form">
-          <label for="name">Имя</label>
-          <input type="text" id="name" />
-          <label for="tel">Телефон</label>
-          <input type="tel" id="tel" />
-          <label for="mail">Почта</label>
-          <input type="email" id="mail" />
-        </div>
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" required pattern="^[А-Яа-яЁё\s]+$" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" required />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input class="form-input" type="email" name="mail" id="mail" required />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментарий</label>
+            <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+          </div>
+          <p class="rules">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="link-rules" href="">Условия договора</a>
+          </p>
+          <button class="btn-sub button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <!--MODAL WINDOW + OVERLAY END-->
