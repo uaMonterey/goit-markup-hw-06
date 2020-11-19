@@ -370,6 +370,29 @@
   transition: border-color 250ms var(--timing-function);
 }
 
+/* .form-input:focus {
+  outline-color: var(--accent);
+} */
+
+.form-field:focus-within .form-input,
+.form-field:focus-within .form-icon {
+  fill: var(--accent);
+  outline-color: var(--accent);
+}
+
+.form-field {
+  position: relative;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
 textarea {
   resize: none;
 
@@ -390,8 +413,14 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms var(--timing-function);
 }
 
+.btn-sub.button:focus,
+.btn-sub.button:hover {
+  background-color: greenyellow;
+}
 .form .rules {
   margin: 0;
   padding-bottom: 30px;
