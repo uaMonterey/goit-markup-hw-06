@@ -445,7 +445,7 @@ textarea::placeholder {
 }
 
 .policy a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--accent);
 }
 
