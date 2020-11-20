@@ -319,6 +319,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  background-color: inherit;
+  transition: 250ms var(--timing-function);
 }
 
 .btn-close {
@@ -326,9 +329,9 @@
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  color: var(--white);
-  background: var(--accent);
-  border-color: var(--white);
+  color: var(--accent);
+  background: var(--white);
+  border-color: var(--accent);
 }
 
 .modal-title {
