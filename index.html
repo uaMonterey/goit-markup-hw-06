@@ -547,7 +547,7 @@
         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
         <form class="form">
           <div class="form-field">
-            <label for="name"><span>Имя</span></label>
+            <label for="name">Имя</label>
             <input class="form-input" type="text" name="name" id="name" required pattern="^[А-Яа-яЁё\s]+$" />
             <svg class="form-icon" width="12" height="12">
               <use href="./img-hw-4/sprite.svg#icon-modal-person"></use>
@@ -571,11 +571,15 @@
             <label for="comment">Коментарий</label>
             <textarea class="form-input" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
-          <p class="rules">
-            Соглашаюсь с рассылкой и принимаю
-            <a class="link-rules" href="">Условия договора</a>
-          </p>
-          <button class="btn-sub button" type="submit">Отправить</button>
+          <label class="check">
+            <input class="check-input" type="checkbox" name="checkbox" />
+            <span class="check-box"> </span>
+            <span class="policy">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </span>
+          </label>
+          <button class="btn-send-form button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

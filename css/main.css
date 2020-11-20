@@ -349,9 +349,10 @@
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .form-field label {
   margin-bottom: 4px;
@@ -360,7 +361,7 @@
   color: var(--main-text-color);
 }
 
-.form input {
+.form-input {
   width: 100%;
   height: 40px;
   /* margin: 0; */
@@ -380,9 +381,6 @@
   outline-color: var(--accent);
 }
 
-.form-field {
-  position: relative;
-}
 .form-icon {
   position: absolute;
   top: 50%;
@@ -393,7 +391,7 @@
   width: 18px;
 }
 
-textarea {
+.form-field textarea {
   resize: none;
 
   width: 100%;
@@ -408,29 +406,71 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.btn-sub.button {
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.check-input {
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-box {
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+
+  border-radius: 2px;
+
+  transition: 250ms var(--timing-function);
+}
+
+.policy {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.policy a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.check-input:checked + .check-box {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  background-image: url(../img-hw-6/check_on.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.btn-send-form.button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   padding: 10px 55px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: 250ms var(--timing-function);
 }
 
-.btn-sub.button:focus,
-.btn-sub.button:hover {
+.btn-send-form.button:focus,
+.btn-send-form.button:hover {
   background-color: greenyellow;
 }
-.form .rules {
-  margin: 0;
-  padding-bottom: 30px;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
 
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
 /* Стилизация подвала 
    находится в common.css  */
